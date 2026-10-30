@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">⚽ eFOOTBALL <span>HUB</span></div>
+    <nav>
+        <a href="#players">Players</a>
+        <a href="#managers">Managers</a>
+        <a href="#packs">Packs</a>
+        <a href="#updates">Updates</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>THE ULTIMATE <span>eFOOTBALL</span> DATABASE</h1>
+    <p>Players. Managers. Cards. Packs. Everything in one place.</p>
+    <input type="text" id="search"
+        placeholder="Search players, clubs or positions...">
+</section>
+
+<main>
+    <section id="players">
+        <h2>PLAYER CARDS</h2>
+        <div class="filters">
+            <button onclick="filterPlayers('All')">All</button>
+            <button onclick="filterPlayers('Epic')">Epic</button>
+            <button onclick="filterPlayers('Big Time')">Big Time</button>
+            <button onclick="filterPlayers('Show Time')">Show Time</button>
+            <button onclick="filterPlayers('Highlight')">Highlight</button>
+        </div>
+        <div class="player-grid" id="playerGrid"></div>
+    </section>
+
+    <section id="managers">
+        <h2>MANAGERS & COACHES</h2>
+        <div class="player-grid" id="managerGrid"></div>
+    </section>
+
+    <section id="packs">
+        <h2>FEATURED PACKS</h2>
+        <div id="packGrid" class="pack-grid"></div>
+    </section>
+
+    <section id="updates">
+        <h2>LATEST UPDATES</h2>
+        <div id="updatesList"></div>
+    </section>
+</main>
+
+<footer>
+    <p>eFootball Hub © 2026 | Fan-made website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
